@@ -2,12 +2,11 @@
 
 Functions in this repository can be used to estimate data purity and proportions of subtypes.
 
-The gene expression data of blood cells were downloaded from Gene Expression Omnibus which was used as pure signals. You could mix these pure signals in any proportions (sum to 1) and see how well it estimates your input.
+The gene expression data of blood cells were downloaded from Gene Expression Omnibus which was used as pure signals. You could mix these pure signals in any proportions (sum up to 1) and see how well it estimates your input.
 
-Functions for extracting cell type-specific expressed genes are also useful for other analyses.
-
+## Example
 ```
-$Rscript ./PurityInfer.R 0 0.5 0.4 0.1
+$ Rscript ./PurityInfer.R 0 0.5 0.4 0.1
 
 [1] "estimated cell proportions are:"
 [1] 0.0000 0.4999 0.3972 0.1025
