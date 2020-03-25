@@ -2,7 +2,7 @@
 
 Functions in this repository can be used to estimate data purity and proportions of subtypes.
 
-The gene expression data of blood cells were downloaded from Gene Expression Omnibus which was used as pure signals. You could mix these pure signals in any proportions (sum up to 1) and see how well it estimates your input.
+The gene expression data of different immune cells were downloaded from Gene Expression Omnibus. You could mix these pure signals in any proportions (sum up to 1) and see how well it estimates your input.
 
 ## Example
 ```
