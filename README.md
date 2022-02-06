@@ -10,7 +10,7 @@ Cell type deconvolution methods help us estimate the purity of bulk tumor tissue
 
 Scripts in this small project provide a way to estimate tumor sample heterogeneity by:
 
-1. first modeling the observed mixed gene expression profiles of tumor tissues in linear equations, **_y=Sw_**.
+1. first modeling the observed mixed gene expression profiles of tumor tissues in linear equations, **_y=Sw_**;
 1. and then solving the equations (estimating **_w_**) with quadratic programming (QP).
 
 
@@ -28,7 +28,7 @@ Note, this dataset has no tumor cells and is just a mock data used to explain th
 data <- read.csv('exp_processed.csv', row.names = 1)
 ```
 
-### Step 2: Generate a signature matrix for each cell type in the mixture
+### Step 2: Generating a signature matrix for each cell type in the mixture
 
 The cell signature matrix **_S_** is a matrix with rows being cell-type-specific genes, columns being cell types, and entries being averaged gene expression levels in each cell type. **_S_** is usually unknown and need to be estimated from their expression profiles.
 
